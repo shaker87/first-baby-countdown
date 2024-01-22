@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  overflow: hidden;
+}
+
+.container{
+  width: 360px;
+  margin: 0 auto;
+  
+}
+
+.counter-wrapper{
+  padding: 0px 20px;
+  text-align: center;
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
