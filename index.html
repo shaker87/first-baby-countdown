@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Child Countdown</title>
+    <!-- <title>First Child Countdown</title> -->
+     <title>Sumayra's Birthday Countdown</title>
     <link rel="shortcut icon" href="image/dad.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 
 <body style="background-color: pink;">
@@ -17,13 +18,14 @@
             <div class="counter-wrapper">
                 <!-- <h1>Our first child is due</h1> -->
                 <div>
-                    <h1 style="margin-top: 2%;">আর বাকি!</h1>
-                    <h2 style="font-size: 38px;" id="demo"></h2>
+                    <h1 style="margin-top: 2%; font-size: 22px;">আর বাকি!</h1>
+                    <h2 style="font-size: 28px;" id="demo"></h2>
                 </div>
-                <img style="width: 260px;" src="image/dad-removebg-preview.png" alt="" srcset="">
-                <h2 style="font-size: 28px;">Shaker and Nayeem first child will arrive soon.
-We are waiting for this exciting moment.</h2>
-                <h3 style="margin-bottom: 20px; font-size: 24px;">Please keep us in your prayers.</h3>
+                <img style="width: 240px;" src="image/dad-removebg-preview.png" alt="" srcset="">
+                <!-- <h2 style="font-size: 28px;">Shaker and Nayeem first child will arrive soon.
+We are waiting for this exciting moment.</h2> -->
+                <h2 style="font-size: 20px;">সুমাইরার প্রথম জন্মদিন আসছে এবং আমরা এই উত্তেজনাপূর্ণ মুহূর্তটির জন্য অধীর আগ্রহে অপেক্ষা করছি। আপনাকে এই জন্মদিনের অনুষ্ঠানে আমন্ত্রণ জানানো হচ্ছে।</h2>
+                <h3 style="margin-bottom: 20px; font-size: 20px;">অনুগ্রহ করে সুমাইরার জন্য দোয়া করবেন।</h3>
             </div>
         </div>
     </div>
@@ -31,35 +33,36 @@ We are waiting for this exciting moment.</h2>
 
 
     <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Apr 10, 2024 12:00:00").getTime();
-
-        // Update the count down every 1 second
+        // আমরা যে তারিখের জন্য কাউন্টডাউন করছি সেট করুন
+        var countDownDate = new Date("Mar 22, 2025 12:00:00").getTime();
+    
+        // প্রতি ১ সেকেন্ডে কাউন্টডাউন আপডেট করুন
         var x = setInterval(function () {
-
-            // Get today's date and time
+    
+            // আজকের তারিখ এবং সময় নিন
             var now = new Date().getTime();
-
-            // Find the distance between now and the count down date
+    
+            // এখন এবং কাউন্টডাউন তারিখের মধ্যে দূরত্ব নির্ণয় করুন
             var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes and seconds
+    
+            // দিন, ঘন্টা, মিনিট এবং সেকেন্ডের জন্য সময় হিসাব
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Output the result in an element with id="demo"
-            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-                + minutes + "m " + seconds + "s ";
-
-            // If the count down is over, write some text 
+    
+            // id="demo" সহ এলিমেন্টে ফলাফল দেখান
+            document.getElementById("demo").innerHTML = days + "দিন " + hours + "ঘন্টা "
+                + minutes + "মিনিট " + seconds + "সেকেন্ড ";
+    
+            // যদি কাউন্টডাউন শেষ হয়ে যায়, কিছু টেক্সট দেখান
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
+                document.getElementById("demo").innerHTML = "সময় শেষ";
             }
         }, 1000);
     </script>
+    
 
 </body>
 
